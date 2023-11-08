@@ -4,21 +4,20 @@
 */
 
 enum DayInWeek {
-  Monday,
-  Tuesday,
-  Wednesday,
-  Thursday,
-  Friday,
-  Saturday,
-  Sunday,
- }
+  Monday = "Monday",
+  Tuesday = "Tuesday",
+  Wednesday = "Wednesday",
+  Thursday = "Thursday",
+  Friday = "Friday",
+  Saturday = "Saturday",
+  Sunday = "Sunday",
+}
 
- function isWeekend(day: DayInWeek): boolean {
+function isWeekend(day: DayInWeek): boolean {
   return day === DayInWeek.Saturday || day === DayInWeek.Sunday;
- }
+}
 
- const currentDay: DayInWeek = DayInWeek.Monday;
- const isCurrentDayWeekend: boolean = isWeekend(currentDay);
- 
- console.log(`Is it a Weekend?: ${isCurrentDayWeekend}`)
+const currentDay: DayInWeek = DayInWeek.Monday;
+const isCurrentDayWeekend: boolean = isWeekend(currentDay);
 
+console.log(`Is ${currentDay} a Weekend?: ${isCurrentDayWeekend}`);
